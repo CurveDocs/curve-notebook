@@ -1,1 +1,1 @@
-# curve-notebook
+# curve-notebooks

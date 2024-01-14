@@ -1,0 +1,78 @@
+site_name: Curve Notebooks
+site_author: mo-anon
+
+
+# repository
+repo_name: CurveDocs/curve-notebooks
+repo_url: https://github.com/CurveDocs/curve-notebooks
+
+# plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+  - social:
+      cards_layout_options: 
+        background_image: layouts/test.png
+
+# theme
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.svg
+  features:
+    - header.autohide
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CurveDocs/curve-notebooks
+      name: GitHub
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/CurveFinance
+      name: Twitter
+    
+  generator: false
+
+# page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Overview: getting-started.md
